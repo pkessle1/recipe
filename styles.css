@@ -1,0 +1,138 @@
+html{
+    background-color:rgba(122, 191, 191, .5);
+    position: relative;
+}
+body{
+    width: 414px;
+    background-color: #F2F2F2 ;
+    text-align: center;
+    margin:auto;
+}
+header h1{
+    visibility: hidden;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+
+}
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.img_action ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding:0 30px;
+}
+.img_action ul li{
+    text-decoration: none;
+    width:67px;
+}
+.img_action ul a{
+    text-decoration: none;
+    color: #EB5428;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+} 
+
+ul li .jump_to_recipe{
+    width:80px;
+}
+.img p{
+    text-align: left;
+    padding:0 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+}
+.details{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+.details ul{
+    list-style: none;
+    padding:0 10px;
+}
+li .bolder{
+    font-weight: 700;
+    margin-right:10px;
+}
+
+.ingredients{
+    text-align: left;
+}
+.ingredients ul{
+    font-family: "Montserrat", sans-serif;
+    padding: 0 20px;
+}
+.ingredients ul li{
+    margin:15px 0;
+
+}
+.directions ol{
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    padding:0 25px;
+}
+
+.directions ol li{
+    margin:20px 0;
+}
+
+.side_dishes{
+    background-color: #7ABFBF;
+}
+.side_dishes h3{
+    padding-top: 15px;
+    margin:0;
+}
+.mexican_rice, .salsa, .guacamole, .tortillas{
+    padding:0 15px;
+    display: inline-flex;
+    text-align: left;
+    height:25%;
+    margin:20px 0;
+}
+.mexican_rice dl, .salsa dl, .guacamole dl, .tortillas dl{
+    margin:0;
+}
+.mexican_rice img, .salsa img, .guacamole img, .tortillas img{
+    width:30%;
+    height:30%;
+    align-self: center;
+}
+.mexican_rice dt h4, .mexican_rice dd, .mexican_rice dd h5, .salsa dt h4, .salsa dd, .salsa dd h5, .guacamole dt h4, .guacamole dd, .guacamole dd h5, .tortillas dt h4, .tortillas dd, .tortillas dd h5, {
+    margin:3px 22px;
+}
+.mexican_rice dt h4, .salsa dt h4, .guacamole dt h4, .tortillas dt h4{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.mexican_rice dd, .salsa dd, .guacamole dd, .tortillas dd{
+    font-family: "Montserrat", sans-serif;
+}
+.mexican_rice dt, .salsa dt, .guacamole dt, .tortillas dt{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.mexican_rice dd h5, .salsa dd h5, .guacamole dd h5, .tortillas dd h5{
+    margin:0;
+}
+.main_nav h3{
+    visibility: hidden;
+}
+.main_nav{
+    position:absolute;
+    top:0;
+}
+.breakfast_nav img{
+    width: 20%;
+    height:20%;
+}
