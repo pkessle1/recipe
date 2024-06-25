@@ -7,7 +7,9 @@ body{
     background-color: #F2F2F2 ;
     text-align: center;
     margin:auto;
+    position:relative;
 }
+
 header h1{
     visibility: hidden;
     font-family: "Bebas Neue", sans-serif;
@@ -16,16 +18,21 @@ header h1{
 
 }
 h2{
+    position:relative;
+    top:80px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-size: 30px;
     text-transform: uppercase;
 }
+
 .img_action ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
     padding:0 30px;
+    position: relative;
+    top:65px;
 }
 .img_action ul li{
     text-decoration: none;
@@ -38,13 +45,22 @@ h2{
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
 } 
+.img_action ul svg{
+    width:40px;
+    height:40px;
+}
 
 ul li .jump_to_recipe{
     width:80px;
 }
+.img img{
+    position:relative;
+    top:45px;
+ 
+}
 .img p{
     text-align: left;
-    padding:0 10px;
+    padding:30px 10px 0 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
@@ -113,6 +129,7 @@ li .bolder{
 }
 .mexican_rice dt h4, .salsa dt h4, .guacamole dt h4, .tortillas dt h4{
     margin-bottom: 10px;
+    margin-left:40px;
     text-transform: uppercase;
 }
 .mexican_rice dd, .salsa dd, .guacamole dd, .tortillas dd{
@@ -127,12 +144,200 @@ li .bolder{
 }
 .main_nav h3{
     visibility: hidden;
+ 
 }
 .main_nav{
     position:absolute;
     top:0;
 }
-.breakfast_nav img{
+.breakfast_nav img, .brunch_nav img, .lunch_nav img, .dinner_nav img, .app_nav img, .dess_nav img, .bev_nav img{
     width: 20%;
     height:20%;
+    visibility: hidden;
 }
+.breakfast_nav, .brunch_nav , .lunch_nav, .dinner_nav, .app_nav, .dess_nav, .bev_nav {
+    list-style: none;
+    text-decoration: none;
+}
+nav h3{
+    display: none;
+}
+.nav_box{
+    position:absolute;
+    top:0px;
+    width:414px;
+    height:65px;
+    background-color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+.burger_box h5{
+    padding:0;
+    margin:0;
+    text-transform: uppercase;
+}
+.checkburger{
+    cursor:pointer;
+}
+.burger_box{
+    align-items: center;
+    width:80px;
+}
+
+#check{
+    display: none;
+}
+#check:checked  ~ .nav-mobile{
+    display: block;
+    top:65px;
+    left:0;
+    position:absolute;
+    background-color: #ffffff;
+    z-index:3;
+    width:414px;
+}
+
+.nav-mobile{
+    display: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+.home{
+    background-color: #EB5428;
+    position: absolute;
+    left:80px;
+    top:0;
+    width:254px;
+}
+.home_nav p{
+    display: none;
+}
+.nav-mobile img{
+    display: none;
+}
+.nav-mobile p{
+    padding:5px 0;
+    color: #EB5428;
+}
+.nav-mobile p:hover{
+    background-color: #EB5428;
+    color: #F2F2F2;
+}
+.avatar_box{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 65px;
+    width:80px;
+}
+.avatar_box h5{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.search{
+    width:100%;
+    display: flex;
+    position:absolute;
+    top:80px;
+    left:80px;
+    font-family: "Montserrat", sans-serif;
+}
+.search_term{
+    border:3px solid #EB5428;
+    border-right:none;
+    padding:5px;
+    border-radius: 5px 0 0 5px;
+    height:20px;
+}
+.searchbutton{
+    position:relative;
+    top:8px;
+    right:10px;
+    border: 1px solid #Eb5428;
+    background: #EB5428;
+    border-radius: 0 5px 5px 0;
+    cursor:pointer;
+}
+
+.connect{
+    font-family: "Bebas Neue", sans-serif;
+    font-size:20px;
+    text-transform: uppercase;
+    color:#EB5428
+}
+.connect h3{
+    display: none;
+}
+.social ul{
+    display: flex;
+    padding:0 15px;
+    justify-content: space-between;
+}
+.social ul li{
+    list-style-type: none;
+}
+.copyright h3{
+    display: none;
+}
+
+.copyright{
+    display: grid;
+    grid-template-columns: 414px;
+    grid-template-rows:200px 40px 40px ;
+
+}
+.copyright img{
+    width:200px;
+    height:200px;
+    grid-row: 1/2;
+    justify-self: center;
+}
+.copyright .copy, .copyright .taco{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:768px){
+    body{
+        width:768px;
+    }
+    .nav_box{
+        width:768px;
+        height:150px;
+    }
+    .home{
+        left:0px;
+        width:100px;
+    }
+    .avatar_box{
+        right:0px;
+    }
+    #check, .checkburger{
+        display: none;
+    }
+    .nav-mobile{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(7,105px);
+        grid-template-rows:40px, 25px;
+        top:50px;
+    }
+    .breakfast_nav img, .brunch_nav img, .lunch_nav img, .dinner_nav img, .app_nav img, .dess_nav img, .bev_nav img{
+        visibility: visible;
+        position:absolute;
+    }
+   
+    .search, .searchbutton{
+        top:0px;
+        right:10px;
+        
+    }
+
+}
+
+
+
