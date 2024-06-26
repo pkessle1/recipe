@@ -56,6 +56,7 @@ ul li .jump_to_recipe{
 .img img{
     position:relative;
     top:45px;
+    width: 414px;
  
 }
 .img p{
@@ -127,10 +128,10 @@ li .bolder{
     height:30%;
     align-self: center;
 }
-.mexican_rice dt h4, .mexican_rice dd, .mexican_rice dd h5, .salsa dt h4, .salsa dd, .salsa dd h5, .guacamole dt h4, .guacamole dd, .guacamole dd h5, .tortillas dt h4, .tortillas dd, .tortillas dd h5, {
+.mexican_rice dt, .mexican_rice dd, .mexican_rice dd h5, .salsa dt, .salsa dd, .salsa dd h5, .guacamole dt, .guacamole dd, .guacamole dd h5, .tortillas dt, .tortillas dd, .tortillas dd h5 {
     margin:3px 22px;
 }
-.mexican_rice dt h4, .salsa dt h4, .guacamole dt h4, .tortillas dt h4{
+.mexican_rice dt, .salsa dt, .guacamole dt, .tortillas dt{
     margin-bottom: 10px;
     margin-left:40px;
     text-transform: uppercase;
@@ -166,13 +167,14 @@ nav h3{
     position:absolute;
     top:0px;
     width:414px;
-    height:65px;
+    height:70px;
     background-color: #ffffff;
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
-.burger_box h5{
-    padding:0;
+.burger_box p{
+    padding: 0;
     margin:0;
     text-transform: uppercase;
 }
@@ -208,6 +210,7 @@ nav h3{
     left:80px;
     top:0;
     width:254px;
+    height:70px;
 }
 .home_nav p{
     display: none;
@@ -323,7 +326,7 @@ nav h3{
         position: relative;
         display: grid;
         grid-template-columns: repeat(7,105px);
-        top:80px;
+        top:60px;
         left:20px;
     }
     .breakfast_nav p,.brunch_nav p, .lunch_nav p, .dinner_nav p,.app_nav p,.dess_nav p,.bev_nav p{
@@ -409,7 +412,7 @@ nav h3{
         position: relative;
         display: grid;
         grid-template-columns: repeat(7,105px);
-        top:0px;
+        top:-15px;
         left:290px;
     }
     .avatar_box{
@@ -432,11 +435,16 @@ nav h3{
     }
     .img_action{
         width: 150px;
-        height:600px;
-        display: flex;
+        height:650px;
+        background-color: #ffffff;
+        border: 2px solid #EB5428;
+
     }
     .img_action ul{
         flex-direction: column;
+    }
+    .img_action ul li{
+        padding:10px 0;
     }
     .img img{
         height:600px;
